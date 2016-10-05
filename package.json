@@ -1,0 +1,33 @@
+{
+  "name": "ram",
+  "version": "1.0.0",
+  "description": "Image expand bot for Slack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pine/Ram.git"
+  },
+  "author": "Pine Mizune",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pine/Ram/issues"
+  },
+  "homepage": "https://github.com/pine/Ram#readme",
+  "dependencies": {
+    "@slack/client": "^3.6.0",
+    "co": "^4.6.0",
+    "execall": "^1.0.0",
+    "fancy-log": "^1.2.0",
+    "got": "^6.5.0",
+    "lodash.capitalize": "^4.2.1",
+    "lodash.values": "^4.3.0",
+    "octokat": "^0.4.18",
+    "promise-retry": "^1.1.1",
+    "require-all": "^2.0.0",
+    "rx": "^4.1.0",
+    "thenify": "^3.2.0"
+  }
+}
