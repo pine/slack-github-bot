@@ -1,7 +1,7 @@
 {
   "name": "ram",
   "version": "1.0.0",
-  "description": "Image expand bot for Slack",
+  "description": "The Slack bot to expand GitHub PR/Issue URLs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
