@@ -5,6 +5,7 @@ const log      = require('fancy-log')
 const SlackBot = require('../lib/slack_bot')
 
 const token      = process.env.SLACK_API_TOKEN
+const githubToken = process.env.GITHUB_TOKEN
 const botUser    = {
   username: process.env.SLACK_USERNAME || 'GitHub',
   icon_url: process.env.SLACK_ICON_URL || '',
@@ -16,6 +17,11 @@ const channels   = []
 
 if (!token) {
   log.error('`SLACK_API_TOKEN` not found')
+  process.exit(1)
+}
+
+if (!githubToken) {
+  log.error('`GITHUB_TOKEN` not found')
   process.exit(1)
 }
 
