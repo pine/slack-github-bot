@@ -6,7 +6,7 @@ const SlackBot = require('../lib/slack_bot')
 
 const token      = process.env.SLACK_API_TOKEN
 const botUser    = {
-  username: process.env.SLACK_USERNAME || 'ram',
+  username: process.env.SLACK_USERNAME || 'GitHub',
   icon_url: process.env.SLACK_ICON_URL || '',
 }
 const lgtmInUrls = []
