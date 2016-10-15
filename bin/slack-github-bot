@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 
+const compact  = require('lodash.compact')
 const log      = require('fancy-log')
 const SlackBot = require('../lib/slack_bot')
 
@@ -12,6 +13,7 @@ const botUser     = {
 }
 const lgtmInUrls = []
 const channels   = []
+const owners     = []
 
 // ----------------------------------------------------------------------------
 
@@ -28,17 +30,22 @@ if (!githubToken) {
 // ----------------------------------------------------------------------------
 
 if (process.env.SLACK_CHANNELS) {
-  const values = process.env.SLACK_CHANNELS.split(',')
-  for (let value of values) {
-    if (value) { channels.push(value) }
-  }
+  channels.push(... compact(process.env.SLACK_CHANNELS.split(',')))
 }
 
-log('Slack channels:', channels.length > 0 ? channels : 'not limited')
+log('Slack channels:', channels.length > 0 ? JSON.stringify(channels) : 'not limited')
 
 // ----------------------------------------------------------------------------
 
-const bot = new SlackBot({ slackToken, botUser, channels })
+if (process.env.GITHUB_OWNERS) {
+  owners.push(... compact(process.env.GITHUB_OWNERS.split(',')))
+}
+
+log('GitHub owners:', owners.length > 0 ? JSON.stringify(owners) : 'not limited')
+
+// ----------------------------------------------------------------------------
+
+const bot = new SlackBot({ slackToken, githubToken, botUser, channels, owners })
 bot.listen()
 
 // vim: se et ts=4 sw=4 sts=4 ft=javascript :

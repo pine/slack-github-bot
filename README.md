@@ -27,6 +27,9 @@ You can set any options uses environment variables.
   - Example: `'general,random'`
 - `GITHUB_TOKEN` GitHub API token (**required**)
   - Please set your [personal access token](https://github.com/settings/tokens)
+- `GITHUB_OWNERS` GitHub user names or organization names (comma separated)
+  - Default: `''` (not limited)
+  - Example: `'foo,bar'`
 
 ## License
 
