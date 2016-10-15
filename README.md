@@ -10,6 +10,7 @@ slack-github-bot
 ```
 $ git clone git@github.com:pine/slack-github-bot.git
 $ cd slack-github-bot
+$ npm install
 $ SLACK_API_TOKEN=XXX GITHUB_TOKEN=XXX bin/slack-github-bot
 ```
 
