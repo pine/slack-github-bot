@@ -1,6 +1,9 @@
 slack-github-bot
 ----------------
 
+## Synopsis
+![](synopsis.png)
+
 ## Requirements
 
 - Node.js v6 ~
