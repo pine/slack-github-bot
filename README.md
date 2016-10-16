@@ -1,6 +1,8 @@
 slack-github-bot
 ----------------
 
+The Slack bot to expand GitHub PR/Issue URLs
+
 ## Synopsis
 ![](synopsis.png)
 
