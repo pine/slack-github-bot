@@ -1,5 +1,5 @@
 {
-  "name": "ram",
+  "name": "slack-github-bot",
   "version": "1.0.0",
   "description": "The Slack bot to expand GitHub PR/Issue URLs",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pine/Ram.git"
+    "url": "git+https://github.com/pine/slack-github-bot.git"
   },
   "author": "Pine Mizune",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pine/Ram/issues"
+    "url": "https://github.com/pine/slack-github-bot/issues"
   },
-  "homepage": "https://github.com/pine/Ram#readme",
+  "homepage": "https://github.com/pine/slack-github-bot#readme",
   "dependencies": {
     "@slack/client": "^3.6.0",
     "co": "^4.6.0",
