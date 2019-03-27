@@ -1,6 +1,8 @@
 slack-github-bot
 ----------------
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pine/slack-github-bot.svg)](https://greenkeeper.io/)
+
 The Slack bot to expand GitHub PR/Issue URLs
 
 ## Synopsis
