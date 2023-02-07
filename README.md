@@ -1,3 +1,9 @@
+# :warning: DEPRECATED
+
+> This repository is no longer maintained.
+
+----
+
 slack-github-bot
 ----------------
 
